@@ -39,12 +39,19 @@
           </div>
         </div>
         <input type="number" name="money" id="money" placeholder="Digite R$">
-        <input type="button" name="btnInput" id="btnInput" value="Input">
-        <output class="litros">10</output>
-        <output class="kmLitros">15</output>
+        <input onclick="Calcular()" type="button" name="btnInput" id="btnInput" value="Input">
+        <p class="erro"></p>
+      </div>
+
+      <div id="resultado">
+        <div class="litros"></div>
+        <div class="kmLitros"></div>
+        <input onclick="Reset()" type="button" name="btnReset" id="btnReset" value="Reset">
       </div>
     </div>
   </main>
   <script src="js/javascript.js"></script>
 </body>
 </html>
+
+

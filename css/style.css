@@ -16,6 +16,8 @@
 #mainCard{
   background-color: var(--background-color);
   margin: auto;
+  height: 100vh;
+  max-width: 600px;
 }
 
 header{
@@ -31,6 +33,23 @@ h1{
   text-align: center;
   color: var(--title-color);
   text-shadow: 2px 3px 5px;
+}
+
+h2{
+  font-size: 15px;
+  text-align: center;
+}
+
+strong{
+  color: var(--title-color);
+  font-weight: 900;
+  font-size: 40px;
+}
+
+p{
+  font-size: 15px;
+  color: var(--title-color);
+  letter-spacing: 2px;
 }
 
 
@@ -62,9 +81,66 @@ img{
   font-weight: 900;
 }
 
-#content{
+#content,#resultado{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
+}
+
+#money{
+  width: 80%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--title-color);
+  font-weight: 900;
+}
+
+#btnInput{
+  margin: 20px;
+  width: 100%;
+  padding: 5px;
+  font-weight: 900;
+  color: var(--text-color);
+  background-color: var(--title-color);
+  border: none;
+  box-shadow: 5px 5px 3px;
+}
+
+#btnReset{
+  margin: 20px;
+  width: 100%;
+  padding: 5px;
+  font-weight: 900;
+  color: var(--text-color);
+  background-color: var(--title-color);
+  border: none;
+  box-shadow: 5px 5px 3px;
+}
+
+#btnInput:hover,#btnReset:hover{
+  cursor: pointer;
+}
+
+#resultado{
+  display: none;
+  
+}
+
+.litros,.kmLitros{
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+.kmLitros{
+  margin-top: 30px;
+}
+
+.erro{
+  color: var(--text-error);
+  font-size: 20px;
+  text-align: center;
 }
