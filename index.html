@@ -11,21 +11,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
 
   <title>Calculadora de Combustível</title>
+
+  <style>
+    body{
+      background-image: url(imagens/Plano\ de\ Fundo.jpeg);
+    }
+  </style>
 </head>
 <body>
 
   <main>
     <div id="mainCard">
       <header>
-        <img src="imagens/marcardor.jpg" alt="">
+        <img onmouseenter="imageEnter()" onmouseout="imageOut()" src="imagens/humid-icon-24.jpg" alt="">
         <h1>Calculadora de Combustível</h1>
       </header>
 
       <div id="content">
-        <p>Preço do Combustível</p>
-        <input type="number" name="price" id="price" value="5">
-        <p>Consumo de Km/litro</p>
-        <input type="number" name="kmh" id="kmh" value="20">
+        <div class="info">
+          <div>
+            <p>R$/litro</p>
+            <p>Km/litro</p>
+          </div>
+          <div>
+            <input type="number" name="price" id="price" value="5">          
+            <input type="number" name="kmh" id="kmh" value="20">
+          </div>
+        </div>
         <input type="number" name="money" id="money" placeholder="Digite R$">
         <input type="button" name="btnInput" id="btnInput" value="Input">
         <output class="litros">10</output>
