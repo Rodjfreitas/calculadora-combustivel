@@ -18,4 +18,15 @@ O programa irá perguntar quanto dinheiro o usuário tem disponível para abaste
 🔨 JavaScript
 
 
+## Capturas
+
+
+![home-mobile](https://user-images.githubusercontent.com/119018022/215787403-12c06557-19df-4856-b78b-6b6afe1b39d0.jpg)
+
+![result-mobile](https://user-images.githubusercontent.com/119018022/215787413-a7d89f25-8513-4827-86d3-6461836fd31b.jpg)
+
+![home](https://user-images.githubusercontent.com/119018022/215787416-f353717b-1815-4947-b378-44aa65e5cf1c.jpg)
+
+![result](https://user-images.githubusercontent.com/119018022/215787407-09dace31-ec28-4867-bade-3912ffe3a2b0.jpg)
+
 
