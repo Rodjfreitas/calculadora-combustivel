@@ -45,6 +45,6 @@ function Calcular(){
     var kmLitros = document.querySelector('.kmLitros')    
     kmLitros.innerHTML = `<h2>Sua autonomia será de <strong>
     ${Number(valorLitros) * Number(kmh.value)}</strong> km
-    de combustível.`
+    de distância percorrida.`
     }
 }
