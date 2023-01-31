@@ -22,10 +22,15 @@ function Calcular(){
   var price = document.querySelector('#price')
   var kmh = document.querySelector('#kmh')
   var valor = document.querySelector('#money')
+  
+ 
+
   if(valor.value == 0){
     var erro = document.querySelector('.erro')
     erro.innerText = 'Preencha o valor que será abastecido'
+
   }else{
+    
     var telaConteudo = document.querySelector('#content')
     var telaResultado = document.querySelector('#resultado')
     telaConteudo.style.display = 'none'
@@ -33,10 +38,11 @@ function Calcular(){
 
     var litros = document.querySelector('.litros')
     var valorLitros = Number(valor.value) / Number(price.value)
-   litros.innerHTML = `<h2>R$ ${Number(valor.value)} abastecerá 
+    valorLitros = valorLitros.toFixed(2)
+    litros.innerHTML = `<h2>R$ ${Number(valor.value)} abastecerá 
     <strong>${Number(valorLitros)}</strong> litros de combustível`
 
-    var kmLitros = document.querySelector('.kmLitros')
+    var kmLitros = document.querySelector('.kmLitros')    
     kmLitros.innerHTML = `<h2>Sua autonomia será de <strong>
     ${Number(valorLitros) * Number(kmh.value)}</strong> km
     de combustível.`
